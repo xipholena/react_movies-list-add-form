@@ -69,7 +69,7 @@ export class NewMovie extends Component {
 
   checkUrlCorrect(e) {
     const { valid } = e.target.dataset;
-
+//========================================нужен data-valid="correctImageUrl" и data-valid="correctDataBaseUrl" с соответствующими ключами в стейте
     // eslint-disable-next-line
     if (/^((([A-Za-z]{3,9}:(?:\/\/)?)(?:[-;:&=+$,\w]+@)?[A-Za-z0-9.-]+|(?:www\.|[-;:&=+$,\w]+@)[A-Za-z0-9.-]+)((?:\/[+~%/.\w-_]*)?\??(?:[-+=&;%@.\w_]*)#?(?:[.!/\\\w]*))?)$/.test(e.target.value)) {
       this.setState({
