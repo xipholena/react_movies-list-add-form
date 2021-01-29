@@ -43,7 +43,7 @@ export class NewMovie extends Component {
     }
   }
 
-  checkFormCorrect() {
+  checkFormCorrect() { //Yt допускаем включение кнопки и последующее onSubmit? если не все поля корректны
     const {title, imgUrl, imdbUrl, imdbId, inputTitle, correctImageUrl, correctDataBaseUrl, inputImdbId,} = this.state;
     const noEmptyInputs = title.length > 0 && imgUrl.length > 0 
     && imdbUrl.length > 0 && imdbId.length > 0
